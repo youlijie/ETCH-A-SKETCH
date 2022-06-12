@@ -7,10 +7,10 @@ const createGrid = (row, col) => {
     for(let i = 0; i < (row * col); i++) {
         const div = document.createElement("div")
         container.appendChild(div).classList.add(i + 1, "grid-items")
+        container.style.gridTemplateRows = `repeat(${row}, 1fr)`
+        container.style.gridTemplateColumns = `repeat(${col}, 1fr)`
         div.addEventListener("mouseover", e => {
             div.style.backgroundColor = "black"
-            container.style.gridTemplateRows = `repeat(${row}, 1fr)`
-            container.style.gridTemplateColumns = `repeat(${col}, 1fr)`
         })
     }
 }

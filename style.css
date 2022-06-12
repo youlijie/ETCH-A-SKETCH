@@ -7,7 +7,6 @@
 body {
     min-height: 100vh;
     height: 100vh;
-    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +28,5 @@ body {
 }
 
 .grid-items {
-    padding: 1em;
     border: 1px solid rgb(0, 0, 0);
 }
